@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+        position: relative;   /* 기준점 */
+        width: 600px;
+        height: 600px;
+        }
+
+        #glCanvas {
+            display: block;
+        }
+
+        #message {
+            position: absolute;   /* 겹치기 */
+            top: 10px;
+            left: 10px;
+
+            color: white;
+            font-size: 14px;
+            font-family: monospace;
+
+            pointer-events: none; /* 클릭 통과 */
+        }
+    </style>
+    <title>week3_homework_2022149025</title>
+</head>
+<body>
+    <div id="container">
+        <canvas id="glCanvas"></canvas>
+        <div id="message">Use arrow keys to move the rectangle</div>
+    </div>
+    <script type="module" src="week3_homework.js"></script>
+</body>
+</html>
